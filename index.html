@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Registration System - Register, Edit, and Delete Student Records">
+    <meta name="author" content="Your Name">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Student Registration System</h1>
+        <p>Register, Edit, and Manage Student Records</p>
+    </header>
+
+    <!-- Form -->
+    <div class="form-container">
+        <h2>Student Registration Form</h2>
+        <form id="student-form">
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter student name" required>
+
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" name="student-id" placeholder="Enter student ID" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address" required>
+
+            <label for="contact">Contact No:</label>
+            <input type="text" id="contact" name="contact" placeholder="Enter contact number" required>
+
+            <button type="submit">Register Student</button>
+        </form>
+    </div>
+
+    <!-- Display Section -->
+    <div class="display-container">
+        <h2>Registered Students</h2>
+        <div class="scrollable-table">
+            <table id="student-table">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student ID</th>
+                        <th>Email ID</th>
+                        <th>Contact No</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Student records will be added dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
